@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E01QC6ET2W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E01QC6ET2W');
+</script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(91815451, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/91815451" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<title>PHP MySQL Database - PHP.Name</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<meta name="description" content="Start learning PHP and build your own website with www.PHP.name, completely free">
+<meta name="keywords" content="PHP,PHP Learn,PHP MySQL Create">
+<meta name="author" content="ByFenix">
+<meta name="publisher" content="2022" />
+<meta name="robots" content="all" />
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 13px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="https://php.name"><img src="img/logo.png" alt="logo" style="width:80%;"></a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close</a>
+  <a class="w3-bar-item w3-button" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button" href="php-intro.html">PHP - Intro</a>
+  <a class="w3-bar-item w3-button" href="php-install.html">PHP - Install</a>
+  <a class="w3-bar-item w3-button" href="php-comments.html">PHP - Comments</a>
+  <a class="w3-bar-item w3-button" href="php-syntax.html">PHP - Syntax</a>
+  <a class="w3-bar-item w3-button" href="php-variables.html">PHP - Variables</a>
+  <a class="w3-bar-item w3-button" href="php-echo-print.html">PHP - Echo/Print</a>
+  <a class="w3-bar-item w3-button" href="php-data-type.html">PHP - Data Type</a>
+  <a class="w3-bar-item w3-button" href="php-strings.html">PHP - Strings</a>
+  <a class="w3-bar-item w3-button" href="php-numbers.html">PHP - Numbers</a>
+  <a class="w3-bar-item w3-button" href="php-math.html">PHP - Math</a>
+  <a class="w3-bar-item w3-button" href="php-constants.html">PHP - Constants</a>
+  <a class="w3-bar-item w3-button" href="php-operators.html">PHP Operators</a>
+  <a class="w3-bar-item w3-button" href="php-if-else-elseif.html">PHP if,else,elseif</a>
+  <a class="w3-bar-item w3-button" href="php-switch.html">PHP Switch</a>
+  <a class="w3-bar-item w3-button" href="php-loop.html">PHP Loop</a>
+  <a class="w3-bar-item w3-button" href="php-arrays.html">PHP Arrays</a>
+  <a class="w3-bar-item w3-button" href="php-global-variable.html">PHP Global Variable</a>
+  <a class="w3-bar-item w3-button" href="php-form.html">PHP Form</a>
+  <a class="w3-bar-item w3-button" href="php-form-validation.html">PHP Form Validation</a>
+  <a class="w3-bar-item w3-button" href="php-date-time.html">PHP Date and Time</a>
+  <a class="w3-bar-item w3-button" href="php-include-recuire.html">PHP Include and Recuire</a>
+  <a class="w3-bar-item w3-button" href="php-cookies-sessions.html">PHP Cookies and Sessions</a>
+  <a class="w3-bar-item w3-button w3-teal" href="php-database.html">PHP MySQL Database</a>
+  <a class="w3-bar-item w3-button" href="php-connect.html">PHP MySQL Connect</a>
+  <a class="w3-bar-item w3-button" href="php-create.html">PHP MySQL Create</a>
+  <a class="w3-bar-item w3-button" href="php-insert.html">PHP MySQL Insert</a>
+  <a class="w3-bar-item w3-button" href="php-select.html">PHP MySQL Select</a>
+  <a class="w3-bar-item w3-button" href="php-where.html">PHP MySQL Where</a>
+  <a class="w3-bar-item w3-button" href="php-order-by.html">PHP MySQL Order By</a>
+  <a class="w3-bar-item w3-button" href="php-delete.html">PHP MySQL Delete</a>
+  <a class="w3-bar-item w3-button" href="php-update.html">PHP MySQL Update</a>
+
+
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">PHP MySQL Database</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">PHP MySQL Database</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<h2>PHP MySQL Database</h2>
+<hr>
+<h3>Introduction to Databases in PHP</h3>
+<p>A database is a structured collection of data that is stored and organized in a specific way, allowing for fast and efficient access and manipulation of the data. Databases are commonly used to store data for websites and applications, such as user accounts, product catalogs, and blog posts.</p>
+<p>PHP provides several ways to connect to and interact with databases, including the MySQLi extension, the PDO extension, and various database libraries and frameworks.</p>
+<p>Connecting to a Database in PHP</p>
+<p>To connect to a database in PHP, you will need to know the following information:</p>
+
+<ul class="w3-leftbar w3-theme-border" style="list-style:none">
+ <li>*The database hostname (e.g. localhost)</li>
+ <li>*The database username and password</li>
+ <li>*The database name</li>
+</ul>
+<p>With this information, you can use the MySQLi extension or the PDO extension to connect to the database.</p>
+<p>Here is an example of connecting to a database using the MySQLi extension:</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #1e889b">&lt;?php</span>
+<span style="color: #00688B">$hostname</span> = <span style="color: #CD5555">&#39;localhost&#39;</span>;
+<span style="color: #00688B">$username</span> = <span style="color: #CD5555">&#39;root&#39;</span>;
+<span style="color: #00688B">$password</span> = <span style="color: #CD5555">&#39;password&#39;</span>;
+<span style="color: #00688B">$dbname</span> = <span style="color: #CD5555">&#39;mydb&#39;</span>;
+
+<span style="color: #00688B">$conn</span> = <span style="color: #8B008B; font-weight: bold">new</span> mysqli(<span style="color: #00688B">$hostname</span>, <span style="color: #00688B">$username</span>, <span style="color: #00688B">$password</span>, <span style="color: #00688B">$dbname</span>);
+
+<span style="color: #8B008B; font-weight: bold">if</span> (<span style="color: #00688B">$conn</span>-&gt;<span style="color: #658b00">connect_error</span>) {
+  <span style="color: #8B008B; font-weight: bold">die</span>(<span style="color: #CD5555">&quot;Connection failed: &quot;</span> . <span style="color: #00688B">$conn</span>-&gt;<span style="color: #658b00">connect_error</span>);
+}
+<span style="color: #1e889b">?&gt;</span>
+</pre></div>
+
+<p>This will create a new MySQLi connection object and store it in the $conn variable. If the connection is successful, the connect_error property of the object will be null. If the connection fails, the connect_error property will contain an error message.</p>
+<p>Here is an example of connecting to a database using the PDO extension:</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #1e889b">&lt;?php</span>
+<span style="color: #00688B">$hostname</span> = <span style="color: #CD5555">&#39;localhost&#39;</span>;
+<span style="color: #00688B">$username</span> = <span style="color: #CD5555">&#39;root&#39;</span>;
+<span style="color: #00688B">$password</span> = <span style="color: #CD5555">&#39;password&#39;</span>;
+<span style="color: #00688B">$dbname</span> = <span style="color: #CD5555">&#39;mydb&#39;</span>;
+
+<span style="color: #8B008B; font-weight: bold">try</span> {
+  <span style="color: #00688B">$conn</span> = <span style="color: #8B008B; font-weight: bold">new</span> PDO(<span style="color: #CD5555">&quot;mysql:host=$hostname;dbname=$dbname&quot;</span>, <span style="color: #00688B">$username</span>, <span style="color: #00688B">$password</span>);
+  <span style="color: #00688B">$conn</span>-&gt;<span style="color: #658b00">setAttribute</span>(PDO::<span style="color: #658b00">ATTR_ERRMODE</span>, PDO::<span style="color: #658b00">ERRMODE_EXCEPTION</span>);
+} <span style="color: #8B008B; font-weight: bold">catch</span> (PDOException <span style="color: #00688B">$e</span>) {
+  <span style="color: #8B008B; font-weight: bold">echo</span> <span style="color: #CD5555">&quot;Connection failed: &quot;</span> . <span style="color: #00688B">$e</span>-&gt;<span style="color: #658b00">getMessage</span>();
+}
+<span style="color: #1e889b">?&gt;</span>
+</pre></div>
+
+
+<p>This will create a new PDO connection object and store it in the $conn variable. If the connection is successful, the object will be created and stored in the $conn variable. If the connection fails, a PDOException will be thrown, which you can catch and handle with a try-catch block.</p>
+
+<hr>
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+
+<p style="text-align:center;">PHP.Name&copy;2022</p>
+  <p style="text-align:center;">Free php tutorial</p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+</script>
+     
+</body>
+</html> 

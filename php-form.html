@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E01QC6ET2W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E01QC6ET2W');
+</script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(91815451, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/91815451" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<title>PHP Form - PHP.Name</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<meta name="description" content="Start learning PHP and build your own website with www.PHP.name, completely free">
+<meta name="keywords" content="PHP,PHP Learn,PHP Form">
+<meta name="author" content="ByFenix">
+<meta name="publisher" content="2022" />
+<meta name="robots" content="all" />
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 13px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="https://php.name"><img src="img/logo.png" alt="logo" style="width:80%;"></a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close</a>
+  <a class="w3-bar-item w3-button" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button" href="php-intro.html">PHP - Intro</a>
+  <a class="w3-bar-item w3-button" href="php-install.html">PHP - Install</a>
+  <a class="w3-bar-item w3-button" href="php-comments.html">PHP - Comments</a>
+  <a class="w3-bar-item w3-button" href="php-syntax.html">PHP - Syntax</a>
+  <a class="w3-bar-item w3-button" href="php-variables.html">PHP - Variables</a>
+  <a class="w3-bar-item w3-button" href="php-echo-print.html">PHP - Echo/Print</a>
+  <a class="w3-bar-item w3-button" href="php-data-type.html">PHP - Data Type</a>
+  <a class="w3-bar-item w3-button" href="php-strings.html">PHP - Strings</a>
+  <a class="w3-bar-item w3-button" href="php-numbers.html">PHP - Numbers</a>
+  <a class="w3-bar-item w3-button" href="php-math.html">PHP - Math</a>
+  <a class="w3-bar-item w3-button" href="php-constants.html">PHP - Constants</a>
+  <a class="w3-bar-item w3-button" href="php-operators.html">PHP Operators</a>
+  <a class="w3-bar-item w3-button" href="php-if-else-elseif.html">PHP if,else,elseif</a>
+  <a class="w3-bar-item w3-button" href="php-switch.html">PHP Switch</a>
+  <a class="w3-bar-item w3-button" href="php-loop.html">PHP Loop</a>
+  <a class="w3-bar-item w3-button" href="php-arrays.html">PHP Arrays</a>
+  <a class="w3-bar-item w3-button" href="php-global-variable.html">PHP Global Variable</a>
+  <a class="w3-bar-item w3-button w3-teal" href="php-form.html">PHP Form</a>
+  <a class="w3-bar-item w3-button" href="php-form-validation.html">PHP Form Validation</a>
+  <a class="w3-bar-item w3-button" href="php-date-time.html">PHP Date and Time</a>
+  <a class="w3-bar-item w3-button" href="php-include-recuire.html">PHP Include and Recuire</a>
+  <a class="w3-bar-item w3-button" href="php-cookies-sessions.html">PHP Cookies and Sessions</a>
+  <a class="w3-bar-item w3-button" href="php-database.html">PHP Database</a>
+  <a class="w3-bar-item w3-button" href="php-connect.html">PHP MySQL Connect</a>
+  <a class="w3-bar-item w3-button" href="php-create.html">PHP MySQL Create</a>
+  <a class="w3-bar-item w3-button" href="php-insert.html">PHP MySQL Insert</a>
+  <a class="w3-bar-item w3-button" href="php-select.html">PHP MySQL Select</a>
+  <a class="w3-bar-item w3-button" href="php-where.html">PHP MySQL Where</a>
+  <a class="w3-bar-item w3-button" href="php-order-by.html">PHP MySQL Order By</a>
+  <a class="w3-bar-item w3-button" href="php-delete.html">PHP MySQL Delete</a>
+  <a class="w3-bar-item w3-button" href="php-update.html">PHP MySQL Update</a>
+
+
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">PHP Form</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">PHP Form</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<h2>PHP Form</h2>
+<hr>
+<h3>Introduction to Forms in PHP</h3>
+<p>Forms are an essential part of the web, used to gather information from users and send it to a server for processing. In PHP, forms are used to create interactive websites and enable users to send data to the server for processing.</p>
+<p>There are two main types of forms: GET and POST. The GET method sends the form data as a query string in the URL, while the POST method sends the form data as a separate message in the HTTP request. The POST method is generally considered more secure because the form data is not visible in the URL and is not cached by the browser.</p>
+<img src="img/form.png" style="width:4%" alt="Responsive"><br/>
+
+<h3>Creating a Form in PHP</h3>
+<p>To create a form in PHP, you need to use the <form> element and specify the action attribute, which specifies the PHP script that will process the form data, and the method attribute, which specifies whether the form data will be sent using the GET or POST method.</p>
+<p>Here is an example of a simple form that allows users to enter their name and email address:</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #1e889b">&lt;?php</span>
+&lt;form action=<span style="color: #CD5555">&quot;process_form.php&quot;</span> method=<span style="color: #CD5555">&quot;POST&quot;</span>&gt;
+  Name: &lt;input type=<span style="color: #CD5555">&quot;text&quot;</span> name=<span style="color: #CD5555">&quot;name&quot;</span>&gt;&lt;br&gt;
+  Email: &lt;input type=<span style="color: #CD5555">&quot;text&quot;</span> name=<span style="color: #CD5555">&quot;email&quot;</span>&gt;&lt;br&gt;
+  &lt;input type=<span style="color: #CD5555">&quot;submit&quot;</span> value=<span style="color: #CD5555">&quot;Submit&quot;</span>&gt;
+&lt;/form&gt;
+
+<span style="color: #1e889b">?&gt;</span>
+</pre></div>
+
+<p>Inside the form element, you can add form controls such as text fields, radio buttons, checkboxes, and submit buttons to allow users to enter and select data.</p>
+<p>For example, here is a form with a radio button group that allows users to select their gender:</p>
+
+
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #1e889b">&lt;?php</span>
+&lt;form action=<span style="color: #CD5555">&quot;process_form.php&quot;</span> method=<span style="color: #CD5555">&quot;POST&quot;</span>&gt;
+  Gender:
+  &lt;input type=<span style="color: #CD5555">&quot;radio&quot;</span> name=<span style="color: #CD5555">&quot;gender&quot;</span> value=<span style="color: #CD5555">&quot;male&quot;</span>&gt; Male
+  &lt;input type=<span style="color: #CD5555">&quot;radio&quot;</span> name=<span style="color: #CD5555">&quot;gender&quot;</span> value=<span style="color: #CD5555">&quot;female&quot;</span>&gt; Female
+  &lt;br&gt;
+  &lt;input type=<span style="color: #CD5555">&quot;submit&quot;</span> value=<span style="color: #CD5555">&quot;Submit&quot;</span>&gt;
+&lt;/form&gt;
+
+
+<span style="color: #1e889b">?&gt;</span>
+</pre></div>
+
+<h3>Processing Form Data in PHP</h3>
+<p>To process the form data, you will need to create a PHP script that receives the form data and does something with it. In the example above, the action attribute specifies "process_form.php" as the script that will process the form data.</p>
+<p>To access the form data in the PHP script, you can use the $_POST or $_GET superglobal arrays, depending on the method attribute of the form. For example, if the form was submitted using the POST method, you can access the name field like this:</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #1e889b">&lt;?php</span>
+<span style="color: #00688B">$name</span> = <span style="color: #00688B">$_POST</span>[<span style="color: #CD5555">&#39;name&#39;</span>];
+<span style="color: #00688B">$email</span> = <span style="color: #00688B">$_POST</span>[<span style="color: #CD5555">&#39;email&#39;</span>];
+
+<span style="color: #1e889b">?&gt;</span>
+</pre></div>
+
+
+<p>You can then use the form data in your PHP script to do things like insert it into a database, send an email, or perform some other action.</p>
+<h3>Validating and Sanitizing Form Data</h3>
+<p>It is important to validate and sanitize the form data to protect against security vulnerabilities such as SQL injection attacks. You can use built-in functions such as filter_input() and filter_var() to filter and validate the form data, or you can use third-party libraries such as the PHP Filter extension.</p>
+<hr>
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+
+<p style="text-align:center;">PHP.Name&copy;2022</p>
+  <p style="text-align:center;">Free php tutorial</p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+</script>
+     
+</body>
+</html> 

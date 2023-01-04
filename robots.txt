@@ -1,0 +1,26 @@
+# R10.net Robots.txt Servisi # 
+User-Agent: *
+Allow: / 
+
+Sitemap: https://php.name/sitemap.xmlUser-agent: *
+Disallow: /yonlendir/
+Disallow: /login.php
+Disallow: /misc.php
+Disallow: /*/*-p-*/satici-sorulari
+Disallow: /*/*-p-*/saticilar
+Disallow: /*/*-p-*/saticiya-sor
+Disallow: /*/*-p-*/yorum-yap
+Disallow: /*/*-p-*/yorumlar
+Disallow: /authentication/logout
+Disallow: /c/sepetim
+Disallow: /diger-saticilar
+Disallow: /giris
+Disallow: /hesabim
+Disallow: /Hesabim
+Disallow: /login
+Disallow: /Login
+Disallow: /onceden-gezdiklerim
+Disallow: /siparislerim
+Disallow: /sanaozel
+Disallow: /sepetim
+Disallow: /Sepetim
